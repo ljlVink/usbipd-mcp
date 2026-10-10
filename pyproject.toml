@@ -1,0 +1,21 @@
+[project]
+name = "usbipd-http-mcp"
+version = "0.1.0"
+description = "Authenticated Windows usbipd control over Streamable HTTP MCP for WSL agents"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=2.3.0,<3",
+    "pydantic>=2.12,<3",
+    "starlette>=0.48,<2",
+    "uvicorn>=0.31.1,<1",
+]
+
+[tool.uv]
+package = false
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["server"]

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+.usbipd-mcp-token
+*.egg-info/
+build/
+dist/
